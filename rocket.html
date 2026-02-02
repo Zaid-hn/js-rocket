@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Launch Sequence</title>
+    <link rel="stylesheet" href="css/rocket.css">
+    <script src="js/rocket.js" defer></script>
+</head>
+<body class="body-state1">
+    <div class="left">  
+        <div class="state1"> 
+            <h1>JS Rocket Launch</h1>
+            <button id="launchButton" class="button" onclick="changestate(2);">Launch Rocket</button>
+        </div>
+        <div id="countdownDisplay" class="state2">
+            <h1 id="countdownNumber">10</h1>
+            <button id="abortButton" class="button" onclick="changestate(1);">Abort Launch</button>
+        </div>
+        <div class="state3">
+            <h1>Lift Off</h1>
+        </div>
+        <div class="state4">
+            <h1>Well done</h1>
+            <button id="resetButton" class="button" onclick="changestate(1);">Reset</button>
+        </div>
+        <div class="state5">
+            <h1>Launch Aborted</h1>
+            <button id="resetAbortButton" class="button" onclick="changestate(1);">Reset</button>
+        </div>
+    </div>
+    <div class="right">
+        <div class="rocket"></div>
+        <div class="ground"></div>
+    <div>    
+</body>
+</html>
