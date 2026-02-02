@@ -1,0 +1,17 @@
+body{
+    background-color: grey;
+}
+
+.cool{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: 1s;
+}
+
+.coolorange{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 2s;
+}
